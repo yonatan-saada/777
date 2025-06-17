@@ -5,7 +5,7 @@ p = 8
 h = 2
 s = 1
 j = 0
-e = 0
+
 y = b + 2
 for i in range(1,a+1):
     c -= 1
