@@ -4,3 +4,4 @@ y=x*6
 u=input("what your name? ")
 print("hello ", u)
 print( "gi")
+print("uuuu")
