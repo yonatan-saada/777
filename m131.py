@@ -18,4 +18,6 @@ def one_hundred():
     for i in range(10,100):
         print( i)
     return 100
+l = "//////////"
+print(len(l))
 
