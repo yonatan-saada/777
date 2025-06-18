@@ -12,3 +12,5 @@ print("vvvv")
 p = 0
 l = 0
 k = 0
+g = 0
+g = 0
