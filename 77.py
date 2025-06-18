@@ -9,3 +9,6 @@ print("vvv")
 print("xx")
 print("vvv")
 print("vvvv")
+p = 0
+l = 0
+k = 0
