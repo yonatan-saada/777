@@ -79,66 +79,124 @@ from operator import index
 #         max_key = kay
 # print(max_key)
 # 7
-# m = [[1,2,3,4],
-#      [5,6,7,8],
-#      [9,10,11,12],
-#      [13,14,15,16]]
+
+# o = [
+#     [1,2,3,4,5],
+#     [6,7,8,9,10],
+#     [11,12,13,14,15],
+#     [16,17,18,19,20],
+#     [21,22,23,24,25]]
 # b = 0
-# h = []
-# for i ,v in enumerate(m):
-#     for a , c in enumerate(v):
-#         if a == b:
-#             h.append(c)
-#     b += 1
-# print(sum(h))
-# # # #
-# r = int(len(m)-1)
-# f = []
-# for i ,v in enumerate(m):
-#     for a , c in enumerate(v):
-#         if i == a :
-#             f.append(c)
-#             r -= 1
-# print(sum(f))
-# # # #
-# o = 0
-# a = 0
-# for i , v in enumerate (m):
-#     o += v[0]
-#     a += v[len(m)-1]
-# print(a)
-# print(o)
-# # # # #
-# l = []
-# h =0
-# j = 0
-# for i ,v in enumerate(m):
-#     if i == 0 or i == len(m)-1:
-#         h += sum(v)
+# k = []
+# for i ,v in enumerate(o):
+#     for n,m in enumerate(v):
+#         if n == b:
+#             k.append(m)
+#     b+=1
+# print(sum(k))
+# b = len(o)-1
+# k = []
+# for i,v in enumerate(o):
+#     for n,m in enumerate(v):
+#         if n == b:
+#             k.append(m)
+#     b-=1
+# print(sum(k))
+# k = []
+# for i ,v in enumerate(o):
+#     k.append(v[0])
+# print(sum(k))
+# k = []
+# for i ,v in enumerate(o):
+#     k.append(v[len(o)-1])
+# print(sum(k))
+# b = 0
+# for i,v in enumerate(o):
+#     if i == 0 or i == len(o)-1:
+#         b += sum(v)
 #     else:
-#         h += (v[0])
-#         h += (v[len(m)-1])
-# print(h)
-# # # # 8
-b = 0
-m = [[1,2,3,4,5],
-     [6,7,8,9,10,],
-     [11,12,13,14,15],
-     [16,17,18,19,20],
-     [21,22,23,24,25]]
-for i ,v in enumerate(m):
-    if sum(v) > b:
-        g = i
-        b = sum(v)
-print(g)
-c = 0
-d = b
-for i ,v in enumerate(m):
-    if sum(v) < d:
-         g =i
-         d = sum(v)
-print(g)
-# #  ####
+#         b += v[0]
+#         b += v[len(o)-1]
+# print(b)
+# # 8
+o = [
+    [1,2,3,4,5],
+    [6,7,8,9,10],
+    [11,12,13,14,15],
+    [16,17,18,19,20],
+    [21,22,23,24,25]]
+# r = 0
+# m = 0
+# for i,v in enumerate(o):
+#     if sum(v) > r:
+#         r = sum(v)
+#         m = i
+# print(m)
+# r = 0
+# m = 0
+# ###
+# for i,v in enumerate(o):
+#     r +=sum(v)
+# for i,v in enumerate(o):
+#     if sum(v) < r:
+#         r = sum(v)
+#         m = i
+# print(m)
+######
+# b = []
+# for i in range(len(o[0])):
+#      a = []
+#      for h in range(len(o)):
+#          a.append(0)
+#      b.append(a)
+# for i in range(len(o)):
+#     for j in range(len(o)):
+#         b[j][len(o) - 1 - i] = o[i][j]
+# for i in b:
+#     print(i)
+# ## #
+# a = int (input("add a number: "))
+# for i ,v in enumerate(o):
+#     for n,m in enumerate(v):
+#         if m == a:
+#             if 0 < n < len(o)-1:
+#                 if i != 0:
+#                     print(o[i-1][n-1],o[i-1][n],o[i-1][n+1])
+#                 print(o[i][n-1],"  ",o[i][n+1])
+#                 if i != len(o)-1:
+#                    print(o[i+1][n-1],o[i+1][n],o[i+1][n+1])
+#             elif n == 0 :
+#                 if i != 0 :
+#                     print(o[i-1][n],o[i-1][n+1])
+#                 print("   ",o[i][n+1])
+#                 if i != len(o)-1:
+#                     print(o[i+1][n],o[i+1][n+1])
+#             #elif n == len(o)-1 and i != 0 or len(o)-1:
+#             elif n == len(o[0]) - 1:
+#                 if i != 0:
+#                     print(o[i - 1][n-1], o[i - 1][n])
+#                 print( o[i][n -1],"   ")
+#                 if i != len(o)-1:
+#                    print(o[i + 1][n-1], o[i + 1][n])
+#             else:
+#                 if n == len(o)-1 and i == 0 :
+#                         print(o[i][n-1])
+#                         print(o[i+1][n-1],o[i+1][n])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

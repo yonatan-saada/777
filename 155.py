@@ -1,6 +1,6 @@
 a = int(input("add a number: "))
 b = int(input("add a number: "))
-n = a -1
+n = a
 c = 1
 t =b + 2
 d = a // 2 + a//7
@@ -14,7 +14,7 @@ for i in range (1,a + b+1):
         print("/"*(a*2-1))
     elif b < i < a :
         if i <= (a+b)//2:
-             print(" " * c+"/"+" " *(h)  + "/"+" "* (d)+"/"+" "*(h)+"/")
+             print(" " * (i-b-1)+"/"+" " *((a-i)-(i-b))  + "/"+" "* ((a-b)+2*(i-6)-2)+"/"+" "* ((a - b) - 2 * (i - 4))+"/")
              d += 2
              c += 1
              h -= 2
@@ -29,10 +29,10 @@ for i in range (1,a + b+1):
             #c -= 1
             l+=2
     elif 1 < i < b+1:
-        print(" "*(n-1)+"/"+" "*g+"/")
+        print(" "*(n-2)+"/"+" "*g+"/")
         n-=1
         g+=2
     elif a < i < a+b+1:
         g-=2
-        print(" "*n+"/"+" "*(g)+"/")
+        print(" "*(n-1)+"/"+" "*(g)+"/")
         n+=1
