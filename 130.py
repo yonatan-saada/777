@@ -1,6 +1,4 @@
 # 1
-from operator import index
-
 # b = []
 # while True:
 #     a = input("add a number: ")
@@ -125,7 +123,7 @@ o = [
     [11,12,13,14,15],
     [16,17,18,19,20],
     [21,22,23,24,25]]
- r = 0
+r = 0
 # m = 0
 # for i,v in enumerate(o):
 #     if sum(v) > r:
