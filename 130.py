@@ -180,6 +180,35 @@ r = 0
 #                 if n == len(o)-1 and i == 0 :
 #                         print(o[i][n-1])
 #                         print(o[i+1][n-1],o[i+1][n])
+####### 9
+a = [[1,2,3,4,5],
+     [6,7,8,9,10],
+     [11,12,13,14,15],
+     [16,17,18,19,20],
+     [21,22,23,24,25]]
+b = [[2,3,4,5],
+     [7,8,9,10],
+     [12,13,14,15],
+     [17,18,19,20]]
+u = []
+for n,m in enumerate(a):
+    for i ,v in enumerate(m):
+        if b[0][0] == v:
+            for c ,d in enumerate(b):
+                for g,h in enumerate(d):
+                    if b[c][g] == a[n + c][i + g]:
+                         u.append(h)
+                         if len(u) == len(b) * len(d):
+                              print("in")
+                    else:
+                            print("not in")
+
+
+
+            # if b [0][1] == m[i+1]:
+            #     if b [1][0] == a[i+1][0]:
+            #         if b[1][1]== a[i+1][1]:
+            #             print("in")
 
 
 
