@@ -2,9 +2,6 @@ a = int(input("add a number: "))
 b = int(input("add a number: "))
 n = a
 c = 1
-#t =b + 2
-#d = a // 2 + a//7
-h = a//2
 l = 1
 g = 1
 k = False
@@ -39,7 +36,6 @@ for i in range (1,a + b+1):
                 print(" " * (c) + "/" + " " * (l) + "/" + " " * (g) + "/" + " " * (l) + "/")
                 g -= 2
                 l += 2
-
     elif a < i < a+b+1:
         if (a+b) % 2 == 0:
             if not k:

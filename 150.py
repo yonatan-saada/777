@@ -60,14 +60,14 @@
 #     return list1
 # print(double(1,3,5,8,5,8,5))
 # 8
-# def quadratic_equation(a,b,c):
-#     if (b**2 -4 * a * c) < 0:
-#         return "There is no solution"
-#     else:
-#         g = (-b + (b**2 -4 * a * c)**0.5 ) / (2 * a)
-#         u = (-b - (b**2 -4 * a * c)**0.5 ) / (2 * a)
-#     return g,u
-# print(quadratic_equation(3,2,-8))
+def quadratic_equation(a,b,c):
+    if (b**2 -4 * a * c) < 0:
+        return "There is no solution"
+    else:
+        g = (-b + (b**2 -4 * a * c)**0.5 ) / (2 * a)
+        u = (-b - (b**2 -4 * a * c)**0.5 ) / (2 * a)
+    return g,u
+print(quadratic_equation(1,-6,9))
 # 9
 # def dictionary(**name):
 #     for i ,v in name.items():
